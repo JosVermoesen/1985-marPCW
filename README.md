@@ -1,4 +1,4 @@
-# 1985: MAR Accouting for Schneider JOYCE/Amstrad PCW
+# 1985: MAR Accounting for Schneider JOYCE/Amstrad PCW
 
 [SHOW DUTCH BELGIAN PCW-ADVERT FROM NOVEMBER 1985][DIDECAR]
 
