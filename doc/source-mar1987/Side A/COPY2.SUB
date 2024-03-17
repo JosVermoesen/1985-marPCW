@@ -1,0 +1,13 @@
+pip
+<b:=m:*.rnd
+<b:=m:*.key
+<
+era m:*.*
+b:
+;de update is beeindigd
+;uw boekhouddata is klaar om gebruikt te worden met versie 3.XX van het MAR pakket
+;druk eventueel 'SUBMIT ERAUPDAT' gevolgd door <RETURN> om de updateprogramma's
+;te verwijderen van uw opstartdiskette...
+t
+;druk eventueel 'SUBMIT ERAUPDAT' gevolgd door <RETURN> om de updateprogramma's
+;te verwijderen v

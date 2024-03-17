@@ -1,0 +1,12 @@
+;steek de cp/m systeemdiskette met kant 2 in drive a:
+;breng de distributiediskette met kant 1 in drive b:
+;druk op de <STOP> toets om het buffergeheugen leeg te maken
+;en vervolgens 'a:pip' gevolgd door <RETURN>
+;wanneer de *-prompt verschijnt, verwijder de systeemdiskette in drive a: en
+;breng de datadiskette voor drive a: in de plaats
+;druk : 'a:=b:*.fil' gevolgd door <RETURN>
+;druk : 'a:=b:999.rnd' gevolgd door <RETURN>
+;de bestandsdefinitie staat nu op uw datadiskette
+;verwijder eventueel dit tekstbestandje 'BESTANDEN.SUB' van uw boekhoudopstartdiskette
+definitie staat nu op uw datadiskette
+;verwijder eventueel dit 

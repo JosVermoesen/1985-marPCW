@@ -1,0 +1,171 @@
+10 REM MENU.MAR=MENUPROGRAMMA versie 01/07/87
+20 esc$=CHR$(27):rev$=esc$+"p":nrm$=esc$+"q":cls$=esc$+"E"+esc$+"H":on$=esc$+"e":off$=esc$+"f"
+30 flash$=esc$+"p":flashoff$=esc$+"q":DEF FNat$(l,k,a$)=esc$+"Y"+CHR$(32+l)+CHR$(32+k)+a$
+40 eol$=esc$+"K":hel$=esc$+"p":zcht$=esc$+"q"
+50 OPTION RUN
+65 PRINT cls$:PRINT FNat$(0,12,hel$)"VSOFT M.A.R. BOEKHOUDPAKKET versie 3.01 dd. 01/07/87":PRINT FNat$(24,16,"TEL.: 053/000000 (enkel met SERVICEKONTRAKT !)");:PRINT FNat$(0,0,zcht$);
+70 PRINT on$:ch$(0)=" HOOFDMENU ALGEMENE BOEKHOUDING "
+90 ch$(1)="      KREATIE PROGRAMMA'S       "
+100 ch$(2)="      AANKOOPVERRICHTINGEN      "
+110 ch$(3)="      VERKOOPVERRICHTINGEN      "
+120 ch$(4)="    PERIODIEKE VERRICHTINGEN    "
+130 ch$(5)="    FINANCIELE VERRICHTINGEN    "
+140 ch$(6)="    JAARLIJKSE AFSLUITINGEN     "
+150 ch$(7)="       LIJST PROGRAMMA'S        "
+170 ch$(8)="             EINDE              "
+180 ln=32:op=8:x1=22:y1=5:GOSUB 30000
+190 GOSUB 30150
+210 ON ch GOTO 220,400,580,740,910,1290,1070,880
+220 ch$(0)="    KREATIE PROGRAMMA'S   "
+230 ch$(1)="         KLANTEN          "
+240 ch$(2)="       LEVERANCIERS       "
+250 ch$(3)="    ALGEMENE REKENINGEN   "
+260 ch$(4)="         ARTIKELS         "
+270 ch$(5)="         BTW KODES        "
+280 ch$(6)=" INFORMATIE TELLERBESTAND "
+290 ch$(7)="      NAAR HOOFDMENU      "
+300 ln=26:op=7:x1=5:y1=8:GOSUB 30000
+310 GOSUB 30150
+330 PRINT on$:ON ch GOTO 340,350,360,370,380,390,70
+340 RUN"kk.mar
+350 RUN"kl.mar
+360 RUN"kr.mar
+370 RUN"ka.mar
+380 RUN"kb.mar
+390 RUN"init2.mar
+400 ch$(0)="    AANKOOPVERRICHTINGEN     "
+410 ch$(1)="  INBRENGEN AANKOOPFAKTUREN  "
+420 ch$(2)="  OPVRAGEN  AANKOOPFAKTUREN  "
+430 ch$(3)="   UITDRUKKEN AANKOOPBOEK    "
+440 ch$(4)="     BALANS LEVERANCIERS     "
+450 ch$(5)=" VERWIJDEREN AANKOOPFAKTUREN "
+460 ch$(6)=" OVERSCHRIJVINGEN IN KETTING "
+470 ch$(7)="       NAAR HOOFDMENU        "
+480 ln=29:op=7:x1=10:y1=10:GOSUB 30000
+490 GOSUB 30150
+510 PRINT on$:ON ch GOTO 520,530,540,550,560,570,70
+520 RUN"afakt.mar
+530 RUN"oafakt.mar
+540 RUN"uaboek.mar
+550 RUN"ballev.mar
+560 RUN"eraafakt.mar
+570 RUN"ovrlev.mar
+580 ch$(0)="    VERKOOPVERRICHTINGEN     "
+590 ch$(1)="  INBRENGEN VERKOOPFAKTUREN  "
+600 ch$(2)="  OPVRAGEN VF/CV PER KLANT   "
+610 ch$(3)="   UITDRUKKEN VERKOOPBOEK    "
+620 ch$(4)="       BALANS KLANTEN        "
+630 ch$(5)=" VERWIJDEREN VERKOOPFAKTUREN "
+640 ch$(6)="       NAAR HOOFDMENU        "
+650 ln=29:op=6:x1=15:y1=12:GOSUB 30000
+660 GOSUB 30150
+680 PRINT on$:ON ch GOTO 690,700,710,720,730,70
+690 RUN"vfakt.mar
+700 RUN"ovfakt.mar
+710 RUN"uvboek.mar
+720 RUN"balkl.mar
+730 RUN"eravfakt.mar
+740 ch$(0)="   PERIODIEKE VERRICHTINGEN   "
+750 ch$(1)="   INBRENGEN JOURNAALPOSTEN   "
+760 ch$(2)=" ALGEMEEN JOURNAAL/HISTORIEK  "
+770 ch$(3)="  HISTORIEK VAN EEN REKENING  "
+780 ch$(4)="  ARTIKELEN MAANDOMZET INIT   "
+790 ch$(5)="       NAAR HOOFDMENU         "
+800 ln=30:op=5:x1=20:y1=14:GOSUB 30000
+810 GOSUB 30150
+830 PRINT on$:ON ch GOTO 840,850,860,870,70
+840 RUN"jour.mar
+850 RUN"uajour.mar
+860 RUN"uhisteen.mar
+870 RUN"ita.mar
+880 REM
+890 PRINT on$:PRINT FNat$(23,20,hel$+"TERUG NAAR OPERATING SYSTEEM (J/N) ? ")+zcht$;
+895 a$=UPPER$(INKEY$):IF a$="" THEN 895 ELSE IF a$="J" THEN PRINT cls$:PRINT hel$+"MAAK REGELMATIG BACK-UP'S VAN UW DATA A.U.B. !!!":PRINT "DRUK EVENTUEEL f1/f2 OM TERUG IN DE HOOFDMENU TE GERAKEN."+zcht$; ELSE PRINT FNat$(23,0,eol$);:GOTO 70
+900 SYSTEM
+910 ch$(0)=" FINANCIELE VERRICHTINGEN  "
+920 ch$(1)="   INBRENGEN DOKUMENTEN    "
+930 ch$(2)=" DRUKKEN FINANCIELE BOEKEN "
+940 ch$(3)=" TELLER DOKUMENT INBRENGEN "
+950 ch$(4)="  VERKOOPFAKTUREN MANUEEL  "
+960 ch$(5)="  AANKOOPFAKTUREN MANUEEL  "
+970 ch$(6)="      NAAR HOOFDMENU       "
+980 ln=27:op=6:x1=35:y1=12:GOSUB 30000
+990 GOSUB 30150
+1010 PRINT on$:ON ch GOTO 1020,1030,1040,1050,1060,70
+1020 RUN"ifiver.mar
+1030 RUN"ufiver.mar
+1040 RUN"itfd.mar
+1050 RUN "vfaktin.mar
+1060 RUN "afaktin.mar
+1070 ch$(0)="    LIJST PROGRAMMA'S     "
+1080 ch$(1)="         KLANTEN          "
+1090 ch$(2)="       LEVERANCIERS       "
+1100 ch$(3)="   ALGEMENE REKENINGEN    "
+1110 ch$(4)="         ARTIKELS         "
+1120 ch$(5)=" REKENINGUITTREKSEL KLANT "
+1130 ch$(6)="    ETIKETTEN KLANTEN     "
+1140 ch$(7)="    RAPPORT GENEREREN     "
+1150 ch$(8)="     RAPPORT DRUKKEN      "
+1160 ch$(9)="      NAAR HOOFDMENU      "
+1170 ln=26:op=9:x1=50:y1=8:GOSUB 30000
+1180 GOSUB 30150
+1200 PRINT on$:ON ch GOTO 1210,1220,1230,1240,1250,1260,1270,1280,70
+1210 RUN"lk.mar
+1220 RUN"ll.mar
+1230 RUN"lr.mar
+1240 RUN"la.mar
+1250 RUN"urekkl.mar
+1260 RUN"ek.mar
+1270 RUN"rapport.mar
+1280 RUN"listrap.mar
+1290 ch$(0)="       JAARAFSLUITINGEN       "
+1300 ch$(1)="  CONSOLIDATIE AANSCHAKELEN   "
+1310 ch$(2)=" TELLERS/OMZET OP NUL BRENGEN "
+1320 ch$(3)="    UITDRUKKEN BTW-LISTING    "
+1330 ch$(4)="  BOEKJAAR X-1 UITSCHAKELEN   "
+1340 ch$(5)="        NAAR HOOFDMENU        "
+1350 ln=30:op=5:x1=40:y1=10:GOSUB 30000
+1360 GOSUB 30150
+1380 PRINT on$:ON ch GOTO 1390,1400,1410,1420,70
+1390 RUN"x-1.mar
+1400 RUN"initxp1.mar
+1410 RUN"bl.mar
+1420 RUN"xp1.mar
+1600 PRINT FNat$(23,0,eol$+"foutkode :");ERR
+1610 PRINT FNat$(23,30,"<H>ERHALEN - <O>VERSLAAN - <M>ENU ?");eol$;
+1620 antw$="HOM":at$=UPPER$(INKEY$):IF INSTR(antw$,at$)=0 OR at$="" THEN 1620
+1630 IF at$="H" THEN RESUME ELSE IF at$="M" THEN 1640 ELSE RESUME NEXT
+1640 CLOSE 1:CLOSE 2:CLOSE 3:RUN"menu.mar
+30000 REM 'draw menu
+30010 REM x1:y1 top left coordinate of menu
+30020 REM ln    width of menu text
+30030 REM op    no. of menu options
+30040 PRINT FNat$(y1-1,x1-1,rev$+CHR$(134)+STRING$(ln,CHR$(138)));
+30050 PRINT CHR$(140)+nrm$+CHR$(154)+CHR$(156);
+30060 PRINT FNat$(y1,x1-1,rev$+CHR$(133)+STRING$(ln,CHR$(32))+CHR$(133)+nrm$+" "+CHR$(149));
+30070 PRINT FNat$(y1+1,x1-1,rev$+CHR$(130)+STRING$(ln,CHR$(154))+CHR$(136)+nrm$+" "+CHR$(149));
+30080 FOR y=y1+2 TO y1+op+1
+30090 PRINT FNat$(y,x1-1,rev$+CHR$(133)+STRING$(ln,CHR$(32))+CHR$(133)+nrm$+" "+CHR$(149));
+30100 NEXT y
+30110 PRINT FNat$(y1+op+2,x1-1,rev$+CHR$(131)+STRING$(ln,CHR$(138))+CHR$(137)+nrm$+" "+CHR$(149));
+30120 PRINT FNat$(y1+op+3,x1,CHR$(147)+STRING$(ln+1,CHR$(154))+CHR$(153));
+30130 RETURN
+30140 '
+30150 REM ch   no. of option required
+30160 PRINT off$
+30170 PRINT FNat$(y1,x1,rev$+ch$(0)+nrm$);
+30180 FOR n=1 TO op:PRINT FNat$(y1+n+1,x1,rev$+ch$(n)+nrm$);:NEXT n
+30190 ch=1
+30200 PRINT FNat$(y1+1+ch,x1,ch$(ch));
+30210 in$=INKEY$:IF in$="" THEN GOTO 30210
+30215 IF ASC(in$)=8 THEN ch=op:RETURN
+30220 IF in$=CHR$(13) THEN PRINT on$:RETURN
+30230 IF ASC(in$)<>30 AND ASC(in$)<>31 THEN GOTO 30210
+30240 IF ASC(in$)=31 AND ch>1 THEN GOSUB 30270:ch=ch-1:GOTO 30200
+30250 IF ASC(in$)=30 AND ch<op THEN GOSUB 30270:ch=ch+1:GOTO 30200
+30260 GOTO 30210
+30270 PRINT FNat$(y1+1+ch,x1,rev$+ch$(ch)+nrm$);:RETURN
+40000 FOR t=128 TO 159:PRINT t;" ";CHR$(t);:NEXT t
+40010 END
+30210
+30270 PRINT 

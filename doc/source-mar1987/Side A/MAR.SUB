@@ -1,0 +1,12 @@
+setdef m:,* [order = (sub,com) temporary = m:]
+b:pip
+<m:=b:basic.com
+<m:=b:*.mar
+<m:=b:dd.vsf
+<m:=b:vfakt.txt
+<
+b:setkeys b:fnrun
+m:
+basic vsoft.mar /s:162
+
+

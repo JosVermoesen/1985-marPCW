@@ -1,0 +1,15 @@
+b:pip
+<b:=a:*.mar
+<b:=a:mar.sub
+<b:=a:copy?.sub
+<b:=a:fnrun
+<b:=a:vfakt.txt
+<b:=a:eraupdat.sub
+<b:=a:bestand.sub
+<
+;** draai de distributieschijf in drive A om en druk 'B:SUBMIT A:8512B' **
+akt.txt
+<b:=a:eraupdat.sub
+<b:=a:bestand.sub
+<
+;** 
