@@ -15,7 +15,7 @@
 150 PRINT FNat$(13,15,"                            UW KEUZE : ");hel$;"0";zcht$;
 160 PRINT FNat$(13,54,"");
 170 antw$="0123":keuze$=INKEY$:IF INSTR(antw$,keuze$)=0 OR keuze$="" THEN 170
-180 keuze=VAL(keuze$):IF keuze=0 THEN RUN "menu.mar
+180 keuze=VAL(keuze$):IF keuze=0 THEN RUN "menu.mar"
 190 ON keuze GOSUB 210,900,1950
 200 GOTO 110
 210 REM bestout.bas=routine bestandsdefinitie
