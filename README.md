@@ -8,7 +8,7 @@
 
 An accounting program, written in Mallard BASIC using the B+ Tree data sorting functionality for the Amstrad PCW (Schneider JOYCE) with CPM 3. The program is written for the Belgian market and uses Dutch language.
 
-A ready to run version is prepared as program startup disk for drive B. Also 2 data disks are available. All files available in the .dsks folder. Use the CF2DD files only for B: (720 KB)!
+For emulators, a ready to run version is prepared as program startup disk for drive B. Also 2 data disks are available. All files available in the .dsks folder. Use the CF2DD files only for B: (720 KB)!
 
 The Mallard BASIC source code is not protected and can be used for your own purposes.
 
