@@ -22,6 +22,10 @@ A free emulator on Windows for the Amstrad PCW (Schneider JOYCE) computer.
 
 ### [System Discs][systemdiscs]
 
+### [Mallard Basic games][habisoft2]
+
+Lots of games written in Mallard Basic.
+
 ## Links to other resources
 
 - [Wikipedia][wikipedia] - Amstrad PCW
@@ -30,6 +34,7 @@ A free emulator on Windows for the Amstrad PCW (Schneider JOYCE) computer.
 [DIDECAR]: images/DIDECAR-JOYCE-PCW-ADVERT-DEC1985.pdf
 [Manual]: doc/VSOFT-MAR-PCW-1987-NL.pdf
 [habisoft]: https://habisoft.com/pcw/en.htm
+[habisoft2]: https://www.habisoft.com/pcwwiki/doku.php?id=en:games_for_mallard_basic
 [systemdiscs]: https://www.habisoft.com/pcwwiki/doku.php?id=en:sistema:indice
 [pcw-wiki]: https://www.habisoft.com/pcwwiki/doku.php?id=en:start
 [wikipedia]: https://en.wikipedia.org/wiki/Amstrad_PCW
