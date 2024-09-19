@@ -26,6 +26,10 @@ A free emulator on Windows for the Amstrad PCW (Schneider JOYCE) computer.
 
 Lots of games written in Mallard Basic.
 
+### [Youtube Video's on the games][JetSetWillyYoutube]
+
+Corresponding video's on Youtube.
+
 ## Links to other resources
 
 - [Wikipedia][wikipedia] - Amstrad PCW
@@ -35,6 +39,8 @@ Lots of games written in Mallard Basic.
 [Manual]: doc/VSOFT-MAR-PCW-1987-NL.pdf
 [habisoft]: https://habisoft.com/pcw/en.htm
 [habisoft2]: https://www.habisoft.com/pcwwiki/doku.php?id=en:games_for_mallard_basic
+[JetSetWillyYoutube]:https://www.youtube.com/@JetSetWillyJunior/search?query=pcw
 [systemdiscs]: https://www.habisoft.com/pcwwiki/doku.php?id=en:sistema:indice
 [pcw-wiki]: https://www.habisoft.com/pcwwiki/doku.php?id=en:start
 [wikipedia]: https://en.wikipedia.org/wiki/Amstrad_PCW
+
