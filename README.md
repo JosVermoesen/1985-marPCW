@@ -14,11 +14,17 @@ The Mallard BASIC source code is not protected and can be used for your own purp
 
 Manual can be found in [doc folder][Manual] in pdf file format.
 
-## CPM Box Emulator
+## CPM Box Emulators
+
+### [John Elliot's PCW Emulator][johelliotpcw]
+
+An emulator from John Elliot on Windows, Mac and Unix for the Amstrad PCW (Schneider JOYCE) computer.
 
 ### [Habisoft][habisoft]
 
-A free emulator on Windows for the Amstrad PCW (Schneider JOYCE) computer.
+An emulator on Windows for the Amstrad PCW (Schneider JOYCE) computer.
+
+## Discs
 
 ### [System Discs][systemdiscs]
 
@@ -26,7 +32,7 @@ A free emulator on Windows for the Amstrad PCW (Schneider JOYCE) computer.
 
 Lots of games written in Mallard Basic.
 
-### [Youtube Video's on the games][JetSetWillyYoutube]
+### [Youtube Video's on games][JetSetWillyYoutube]
 
 Corresponding video's on Youtube.
 
@@ -43,4 +49,6 @@ Corresponding video's on Youtube.
 [systemdiscs]: https://www.habisoft.com/pcwwiki/doku.php?id=en:sistema:indice
 [pcw-wiki]: https://www.habisoft.com/pcwwiki/doku.php?id=en:start
 [wikipedia]: https://en.wikipedia.org/wiki/Amstrad_PCW
+[johnelliotpcw]:https://www.seasip.info/Unix/Joyce/download.html
+
 
