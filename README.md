@@ -14,7 +14,7 @@ The Mallard BASIC source code is not protected and can be used for your own purp
 
 Manual can be found in [doc folder][Manual] in pdf file format.
 
-## CPM Box Emulators
+## Amstrad PCW/Schneider JOYCE Emulators
 
 ### [John Elliot's PCW Emulator][johnelliotpcw]
 
