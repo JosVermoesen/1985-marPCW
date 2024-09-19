@@ -16,7 +16,7 @@ Manual can be found in [doc folder][Manual] in pdf file format.
 
 ## CPM Box Emulators
 
-### [John Elliot's PCW Emulator][johelliotpcw]
+### [John Elliot's PCW Emulator][johnelliotpcw]
 
 An emulator from John Elliot on Windows, Mac and Unix for the Amstrad PCW (Schneider JOYCE) computer.
 
