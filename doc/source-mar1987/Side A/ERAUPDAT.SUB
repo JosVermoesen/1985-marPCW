@@ -1,0 +1,13 @@
+era copy1.sub
+era copy2.sub
+era update.sub
+era update2.sub
+era dddate1.mar
+era dddate2.mar
+;
+;de update programma's zijn nu verwijderd van uw boekhoudopstartdiskette !
+ update2.sub
+era dddate1.mar
+era dddate2.mar
+;
+;de update programma's zijn 

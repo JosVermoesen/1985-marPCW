@@ -1,0 +1,15 @@
+pip
+<a:=m:*.key
+<a:=m:*.rnd
+<
+era m:*.rnd
+era m:*.key
+;kopieren beeindigd
+;druk "SUBMIT UPDATE2" gevolgd door <RETURN> a.u.b. !
+m:*.key
+<a:=m:*.rnd
+<
+era m:*.rnd
+era m:*.key
+;kopieren beeindigd
+;druk "SUBMIT UPDATE2" gevolgd door <RETURN> a.

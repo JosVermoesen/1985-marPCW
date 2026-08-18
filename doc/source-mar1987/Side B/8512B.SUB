@@ -1,0 +1,16 @@
+B:pip
+<b:=a:*.mar
+<b:=a:dd.vsf
+<b:=a:update?.sub
+<
+;** einde klaarmaken startdiskette **
+;
+;opstarten pakket
+;----------------
+;1. toestel aanzetten en CP/M inladen
+;2. de zopas klaargemaakte startdiskette in drive B: steken
+;3. druk in : B: + <RETURN>, daarna 'SUBMIT MAR' + <RETURN>
+;
+;maak regelmatig een BACK-UP van uw datadiskettes A.U.B. !!!
+
+;3. druk in : B: + <
