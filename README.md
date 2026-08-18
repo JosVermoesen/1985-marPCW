@@ -10,7 +10,7 @@ An accounting program, written in Mallard BASIC using the B+ Tree data sorting f
 
 For emulators, a ready to run set of 4 PCW disks is prepared (in folder .dsks/demo-pcwmar) as program startup disk for drive A and drive B, together with 2 data disks for a demo company (start up the company with a date in 1987). Use CF2DD virtual disk files only for B: (720 KB)!
 
-The Mallard BASIC source code is not protected and can be used for your own purposes.
+The Mallard BASIC source code is not protected and can be examined.
 
 Manual can be found in [doc folder][Manual] in pdf file format.
 
